@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-  <link rel="stylesheet" href="./styles/styles.css" />
+  <link rel="stylesheet" href="./styles/menu-styles.css" />
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -13,31 +13,85 @@
 <body>
   <div class="container">
     <main>
-      <nav>
-        Product
+      <header>
+        <nav class="navbar">
+          <a href="#" class="nav-logo"><img src="./images/logo.svg"></a>
+              <div class="nav-menu">
+                <ul class="nav-menu__list">
+                  <li class="nav-item">
+                    <input class="nav-item__accordion" type="checkbox" name="menu-head" id="group-1">
+                      <label class="nav-item__label" for="group-1">
+                        <span>Product</span>
+                      </label>
+                        <ul class="nav-menu__sub">
+                          <li class="nav-item__sub">
+                            <a href="#">Overview</a>
+                          </li>
+                          <li class="nav-item__sub">
+                            <a href="#">Pricing</a>
+                          </li>
+                          <li class="nav-item__sub">
+                            <a href="#">Marketplace</a>
+                          </li>
+                          <li class="nav-item__sub">
+                            <a href="#">Features</a>
+                          </li>
+                          <li class="nav-item__sub">                        
+                            <a href="#">Integrations</a> 
+                          </li>
+                        </ul>
+                  </li>
+                  <li class="nav-item">
+                    <input class="nav-item__accordion" type="checkbox" name="menu-head" id="group-2">
+                    <label class="nav-item__label" for="group-2">
+                      <span>Company</span>
+                    </label>
+                      <ul class="nav-menu__sub">
+                        <li class="nav-item__sub">
+                          <a href="#">About</a>
+                        </li>
+                        <li class="nav-item__sub">
+                          <a href="#">Team</a>
+                        </li>
+                        <li class="nav-item__sub">
+                          <a href="#">Blog</a>
+                        </li>
+                        <li class="nav-item__sub">
+                          <a href="#">Careers</a>
+                        </li>
+                      </ul>
+                </li>
+                <li class="nav-item">
+                  <input class="nav-item__accordion" type="checkbox" name="menu-head" id="group-3" >
+                  <label class="nav-item__label" for="group-3">
+                    <span>Connect</span>
+                  </label>
+                    <ul class="nav-menu__sub">
+                      <li class="nav-item__sub">
+                        <a href="#">Contact</a>
+                      </li>
+                      <li class="nav-item__sub">
+                        <a href="#">Newsletter</a>
+                      </li>
+                      <li class="nav-item__sub">
+                        <a href="#">LinkedIn</a>
+                      </li>
+                    </ul>
+                </li>
+            </ul>
+            <div class= "buttons">
+            <button class="nav-button nav-item">Login</button>
+            <button class="nav-button nav-item">Sign Up</button>
+          </div>
+        </div>
+            <div class="hamburguer">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>            
+            </div>
+          </nav>
+        </header>
 
-        Overview
-        Pricing
-        Marketplace
-        Features
-        Integrations
-
-        Company
-
-        About
-        Team
-        Blog
-        Careers
-
-        Connect
-
-        Contact
-        Newsletter
-        LinkedIn
-        
-        Login
-        Sign Up
-      </nav>
   A modern publishing platform
   Grow your audience and build your online brand
 
@@ -98,5 +152,6 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
     Coded by <a href="#">Your Name Here</a>.
   </div> -->
+  <script src="./menu.js"></script>
 </body>
 </html>
