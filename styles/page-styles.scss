@@ -1,0 +1,61 @@
+// ## Colors
+
+// ### Primary
+
+$Light_red_text: hsl(356, 100%, 66%);
+$Very_light_red_hover: hsl(355, 100%, 74%); // (CTA hover background): hsl(355, 100%, 74%)
+$Very_dark_blue: hsl(208, 49%, 24%);
+
+// ### Neutral
+
+$White: hsl(0, 0%, 100%);
+$Grayish_blue: hsl(240, 2%, 79%);
+$Very_dark_grayish_blue: hsl(207, 13%, 34%);
+$Very_dark_black_blue: hsl(240, 10%, 16%);
+
+// ### Gradient
+
+// Background gradient - Intro/CTA mobile nav:
+
+$Very_light_red: hsl(13, 100%, 72%);
+$Light_red: hsl(353, 100%, 62%);
+
+// Background gradient - body:
+
+$Very_dark_gray_blue: hsl(237, 17%, 21%);
+$Very_dark_desaturated_blue: hsl(237, 23%, 32%);
+
+body{
+    font-size: 1rem;
+    font-family: 'Overpass', sans-serif;
+}
+
+
+
+.main {
+    height: 90vh;
+    padding-top: 3rem;
+    background-image: linear-gradient(to bottom right,$Very_light_red, $Light_red),
+    url(../images/bg-pattern-intro.svg);
+    background-size: 350%;
+    background-position: 35% 25%;
+    background-blend-mode: lighten;
+    background-repeat: no-repeat;
+    border-radius: 0 0 0 10rem;
+    color: $White;
+    text-align: center;
+        .principal{
+
+            h1{
+
+                font-size: 2.1rem;
+                margin: 1rem 2rem;
+            }
+
+            p{
+                margin: 0 3rem;
+            }
+            
+    }
+        }
+        

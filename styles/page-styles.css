@@ -1,0 +1,28 @@
+body {
+  font-size: 1rem;
+  font-family: 'Overpass', sans-serif;
+}
+
+.main {
+  height: 90vh;
+  padding-top: 3rem;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#ff8f70), to(#ff3d54)), url(../images/bg-pattern-intro.svg);
+  background-image: linear-gradient(to bottom right, #ff8f70, #ff3d54), url(../images/bg-pattern-intro.svg);
+  background-size: 350%;
+  background-position: 35% 25%;
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
+  border-radius: 0 0 0 10rem;
+  color: white;
+  text-align: center;
+}
+
+.main .principal h1 {
+  font-size: 2.1rem;
+  margin: 1rem 2rem;
+}
+
+.main .principal p {
+  margin: 0 3rem;
+}
+/*# sourceMappingURL=page-styles.css.map */

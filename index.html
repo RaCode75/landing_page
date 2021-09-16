@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <!-- Styles-->
   <link rel="stylesheet" href="./styles/menu-styles.css" />
+  <link rel="stylesheet" href="./styles/page-styles.css" />
+  <!--Fonts-->
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -12,8 +15,8 @@
 </head>
 <body>
   <div class="container">
-    <main>
-      <header>
+    <main class="main">
+      <header>        
         <nav class="navbar">
           <a href="#" class="nav-logo"><img src="./images/logo.svg"></a>
               <div class="nav-menu">
@@ -85,18 +88,18 @@
           </div>
         </div>
             <div class="hamburguer">
-                <span class="bar"></span>
-                <span class="bar"></span>
-                <span class="bar"></span>            
+                <img src="./images/icon-hamburger.svg"  class="menu-hamburguer"/>
+                <img src="./images/icon-close.svg" class="menu-x" />
             </div>
           </nav>
         </header>
+  <section class="principal">
+  <h1>A modern publishing platform</h1>
+  <p>Grow your audience and build your online brand </p>
 
-  A modern publishing platform
-  Grow your audience and build your online brand
-
-  Start for Free
-  Learn More
+  <button class="nav-button nav-item">Start for Free</button>
+  <button class="nav-button">Learn More</button>
+</section>
 </main>
   <section>
   Designed for the future
