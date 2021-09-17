@@ -38,16 +38,26 @@ li {
 
 a {
     text-decoration: none;
-    color: $Very_dark_grayish_blue;
+    color: $Very_dark_blue;
 }
 
 
 //--------------End General styles--------------------------------------------------
 
+.nav-button {
+    margin: 0.5rem auto;
+    height: 2.7rem;
+    width: 8rem;
+    border-radius: 2rem;
+    border: none;
+    font-weight: 600;
+}
 
-
-
-
+.button-transp{
+    background:none;
+    border: 2px solid $White;
+    color:$White;
+}
 
 .navbar{
     display: flex;
@@ -109,7 +119,7 @@ a {
                 margin-left: 1rem;
                 cursor: pointer;
                 padding-left: 1rem;
-                color: $Very_dark_gray_blue;
+                color: $Very_dark_blue;
                 font-weight: 600;
             }
 
@@ -134,7 +144,7 @@ a {
                 font-size: 0.9rem;  
                 
                 .nav-item__sub {
-                    color:$Very_dark_black_blue;
+                    color:$Very_dark_blue;
                 }
             }
 
@@ -153,14 +163,7 @@ a {
         border-top: 1px solid #e2e8f0;
         display: flex;
         flex-direction: column;
-        justify-content: center;
-           .nav-button {
-               margin: 0.5rem auto;
-               height: 2.7rem;
-               width: 50%;
-               border-radius: 2rem;
-               border: none;
-           }
+        justify-content: center; 
    }
 
 
@@ -194,7 +197,5 @@ a {
             display: block;
         }
     }
-
-
     
 }

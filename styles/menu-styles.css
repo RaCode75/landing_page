@@ -11,7 +11,22 @@ li {
 
 a {
   text-decoration: none;
-  color: #4b5862;
+  color: #1f3f5b;
+}
+
+.nav-button {
+  margin: 0.5rem auto;
+  height: 2.7rem;
+  width: 8rem;
+  border-radius: 2rem;
+  border: none;
+  font-weight: 600;
+}
+
+.button-transp {
+  background: none;
+  border: 2px solid white;
+  color: white;
 }
 
 .navbar {
@@ -107,7 +122,7 @@ a {
   margin-left: 1rem;
   cursor: pointer;
   padding-left: 1rem;
-  color: #2c2d3f;
+  color: #1f3f5b;
   font-weight: 600;
 }
 
@@ -142,7 +157,7 @@ a {
 }
 
 .navbar .nav-menu .nav-menu__list .nav-item__accordion:checked ~ .nav-menu__sub .nav-item__sub {
-  color: #25252d;
+  color: #1f3f5b;
 }
 
 .navbar .nav-menu .nav-menu__list .nav-item__accordion:checked ~ .nav-item__label::after {
@@ -169,14 +184,6 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-}
-
-.navbar .nav-menu .buttons .nav-button {
-  margin: 0.5rem auto;
-  height: 2.7rem;
-  width: 50%;
-  border-radius: 2rem;
-  border: none;
 }
 
 .navbar .nav-menu.active {
