@@ -1,6 +1,15 @@
 body {
   font-size: 1rem;
   font-family: 'Overpass', sans-serif;
+  color: #1f3f5b;
+}
+
+.desktop-img {
+  display: none;
+}
+
+h2 {
+  font-size: 1.7rem;
 }
 
 .main {
@@ -9,7 +18,7 @@ body {
   background-image: -webkit-gradient(linear, left top, right bottom, from(#ff8f70), to(#ff3d54)), url(../images/bg-pattern-intro.svg);
   background-image: linear-gradient(to bottom right, #ff8f70, #ff3d54), url(../images/bg-pattern-intro.svg);
   background-size: 350%;
-  background-position: 35% 25%;
+  background-position: 35% 30%;
   background-blend-mode: lighten;
   background-repeat: no-repeat;
   border-radius: 0 0 0 10rem;
@@ -36,5 +45,64 @@ body {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0 1rem;
+}
+
+.sect1 {
+  margin: 3rem auto;
+  width: 100%;
+  text-align: center;
+}
+
+.sect1 p {
+  padding: 1rem 2.3rem;
+  line-height: 1.8rem;
+}
+
+.sect1 .heading1 {
+  margin-top: 6rem;
+}
+
+.sect1 .fig1 {
+  width: 100%;
+  margin: 2.5rem auto;
+}
+
+.sect1 .heading2 {
+  padding: 0 4rem;
+}
+
+.sect1 .heading3 {
+  margin-top: 2rem;
+  padding: 0 2rem;
+}
+
+.sect2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: start;
+}
+
+.sect2 .img-phones {
+  width: 100%;
+}
+
+.sect2 .cell-background {
+  height: 90vh;
+  width: 100%;
+  background-image: -webkit-gradient(linear, left top, right bottom, from(#2c2d3f), to(#3f4164)), url(../images/bg-pattern-circles.svg);
+  background-image: linear-gradient(to bottom right, #2c2d3f, #3f4164), url(../images/bg-pattern-circles.svg);
+  background-size: 150%;
+  background-position: 50% -580%;
+  background-blend-mode: lighten;
+  background-repeat: no-repeat;
+  border-radius: 0 10rem 0 10rem;
 }
 /*# sourceMappingURL=page-styles.css.map */

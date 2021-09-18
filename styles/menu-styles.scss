@@ -42,7 +42,7 @@ a {
 }
 
 
-//--------------End General styles--------------------------------------------------
+//--------------Buttons styles--------------------------------------------------
 
 .nav-button {
     margin: 0.5rem auto;
@@ -51,7 +51,9 @@ a {
     border-radius: 2rem;
     border: none;
     font-weight: 600;
+    cursor: pointer;
 }
+
 
 .button-transp{
     background:none;
@@ -72,6 +74,18 @@ a {
     background: none;
     color: $Very_dark_blue;
 }
+
+.button-nothing:hover, .button-white:hover, .button-grad:hover {
+    background: $Very_light_red_background;
+    color: $White;
+}
+
+ .button-transp:hover  {
+    color: $Very_light_red_background;
+    background:$White;
+    border: none;
+}
+//----------Navbar-----------------------------
 
 .navbar{
     display: flex;

@@ -21,6 +21,7 @@ a {
   border-radius: 2rem;
   border: none;
   font-weight: 600;
+  cursor: pointer;
 }
 
 .button-transp {
@@ -42,6 +43,17 @@ a {
 .button-nothing {
   background: none;
   color: #1f3f5b;
+}
+
+.button-nothing:hover, .button-white:hover, .button-grad:hover {
+  background: #ff7a85;
+  color: white;
+}
+
+.button-transp:hover {
+  color: #ff7a85;
+  background: white;
+  border: none;
 }
 
 .navbar {
