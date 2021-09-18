@@ -59,6 +59,20 @@ a {
     color:$White;
 }
 
+.button-white {
+    color: $Light_red_text;
+}
+
+.button-grad {
+    background-image: linear-gradient(to right , $Very_light_red, $Light_red);
+    color: $White;
+}
+
+.button-nothing {
+    background: none;
+    color: $Very_dark_blue;
+}
+
 .navbar{
     display: flex;
     justify-content: space-between;
@@ -121,12 +135,14 @@ a {
                 padding-left: 1rem;
                 color: $Very_dark_blue;
                 font-weight: 600;
-            }
+
+           }
 
             .nav-item__label::after {
                 content: url(../images/icon-arrow-dark.svg);
                 margin: 0 0.5rem;
             }
+
 
             .nav-menu__sub{
                 display: none;
@@ -140,12 +156,15 @@ a {
                 align-items: center;
                 background-color: $Grayish_blue;
                 margin: 1rem auto;
+                padding: 0.5rem 0;
                 border-radius: 5px;
-                font-size: 0.9rem;  
+                font-size: 0.9rem; 
                 
-                .nav-item__sub {
-                    color:$Very_dark_blue;
+                .nav-item__sub{
+                    margin: 0.5rem auto;
                 }
+                
+
             }
 
             .nav-item__accordion:checked ~ .nav-item__label::after{
@@ -171,6 +190,7 @@ a {
 
 .nav-menu.active{
     top: 8rem;
+    width: 85%;
 
 }
     .hamburguer{

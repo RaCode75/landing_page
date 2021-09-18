@@ -29,6 +29,21 @@ a {
   color: white;
 }
 
+.button-white {
+  color: #ff525d;
+}
+
+.button-grad {
+  background-image: -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
+  background-image: linear-gradient(to right, #ff8f70, #ff3d54);
+  color: white;
+}
+
+.button-nothing {
+  background: none;
+  color: #1f3f5b;
+}
+
 .navbar {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -152,12 +167,13 @@ a {
           align-items: center;
   background-color: #c8c8cb;
   margin: 1rem auto;
+  padding: 0.5rem 0;
   border-radius: 5px;
   font-size: 0.9rem;
 }
 
 .navbar .nav-menu .nav-menu__list .nav-item__accordion:checked ~ .nav-menu__sub .nav-item__sub {
-  color: #1f3f5b;
+  margin: 0.5rem auto;
 }
 
 .navbar .nav-menu .nav-menu__list .nav-item__accordion:checked ~ .nav-item__label::after {
@@ -188,6 +204,7 @@ a {
 
 .navbar .nav-menu.active {
   top: 8rem;
+  width: 85%;
 }
 
 .navbar .hamburguer {
