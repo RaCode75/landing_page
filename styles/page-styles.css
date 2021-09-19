@@ -85,18 +85,15 @@ h2 {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  -webkit-box-pack: start;
-      -ms-flex-pack: start;
-          justify-content: start;
-}
-
-.sect2 .img-phones {
-  width: 100%;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 7rem;
+  text-align: center;
 }
 
 .sect2 .cell-background {
   height: 90vh;
-  width: 100%;
   background-image: -webkit-gradient(linear, left top, right bottom, from(#2c2d3f), to(#3f4164)), url(../images/bg-pattern-circles.svg);
   background-image: linear-gradient(to bottom right, #2c2d3f, #3f4164), url(../images/bg-pattern-circles.svg);
   background-size: 150%;
@@ -104,5 +101,88 @@ h2 {
   background-blend-mode: lighten;
   background-repeat: no-repeat;
   border-radius: 0 10rem 0 10rem;
+  margin-top: 25%;
+  margin-bottom: 2rem;
+  color: white;
+}
+
+.sect2 .cell-background .img-phones {
+  width: 100%;
+  position: relative;
+  top: -30%;
+}
+
+.sect2 .cell-background h2 {
+  font-size: 2.5rem;
+  position: relative;
+  top: -28%;
+}
+
+.sect2 .cell-background p {
+  position: relative;
+  top: -25%;
+  margin: 0 2rem;
+  line-height: 1.8rem;
+  color: white;
+}
+
+.sect2 .img-laptop {
+  height: 100%;
+  margin: 2rem 0;
+}
+
+.sect2 p {
+  margin: 1.5rem 2.5rem 2rem 2.5rem;
+  line-height: 1.8rem;
+  color: #4b5862;
+}
+
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  background-color: #25252d;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-family: 'Ubuntu', sans-serif;
+  font-weight: 600;
+  font-size: 1.1rem;
+  text-align: center;
+  padding-bottom: 1.5rem;
+  border-radius: 0 8rem 0 0;
+}
+
+footer .f-nav-logo {
+  margin: 5rem 0 4rem 0;
+}
+
+footer .f-list {
+  margin-bottom: 2.5rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+footer .f-list .f-span {
+  color: white;
+  margin-bottom: 1.5rem;
+}
+
+footer .f-list .f-list-item {
+  margin: 0.4rem 0;
+  font-weight: 300;
+}
+
+footer .f-list .f-list-item .f-link {
+  color: #c8c8cb;
 }
 /*# sourceMappingURL=page-styles.css.map */
