@@ -6,7 +6,7 @@ const op1 = document.getElementById('group-1');
 const op2 = document.getElementById('group-2');
 const op3 = document.getElementById('group-3');
 //-------menu-principal--------------------------
-const navLabel = document.querySelectorAll('.nav-label__sub'); 
+//const navLabel = document.querySelector('.label1'); 
 
 //----------Hamburguer menu --------------
 hamburguer.addEventListener("click", ()=>{

@@ -44,7 +44,7 @@ a {
 
 .button-nothing {
   background: none;
-  color: #1f3f5b;
+  color: #4b5862;
 }
 
 .button-nothing:hover, .button-white:hover, .button-grad:hover {
@@ -193,6 +193,10 @@ a {
 .navbar .nav-menu .nav-menu__list .nav-item__accordion:checked ~ .nav-item__label::after {
   -webkit-transform: rotate(180deg);
           transform: rotate(180deg);
+}
+
+.navbar .nav-menu .nav-menu__list .nav-item__accordion:checked ~ .nav-item__label {
+  color: #4b5862;
 }
 
 .navbar .nav-menu .nav-menu__list .nav-item__sub {
