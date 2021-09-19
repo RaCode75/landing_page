@@ -241,3 +241,101 @@ a {
     }
     
 }
+//-------------Media queries--------------------------
+
+@media screen and (min-width: 768px) {
+    
+    .navbar {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        flex-wrap: nowrap;
+        margin: 0 auto;
+        padding: 0 5rem;
+
+        
+                    .nav-menu{
+                        position:inherit;
+                        flex-direction: row;
+                        justify-content: space-between;
+                        background: none;
+                        box-shadow: none;
+                        width:100%;
+                    
+                    .nav-menu__list{
+                        flex-direction: row;
+                        justify-content: flex-start;
+                        align-items: center;
+                        width:60%;
+        
+                        .nav-item{
+                            width: 20%;
+                        }
+        
+                        .nav-item__accordion{
+                            position: absolute;
+                            opacity: 0;
+                            padding: 1rem 4rem;
+                        }
+        
+                        .nav-item__label{
+                            position: relative;
+                            justify-content: center;
+                            display: flex;
+                            align-items: center;
+                            margin-left: 1rem;
+                            cursor: pointer;
+                            color: $White;
+
+                        }
+                        .nav-item__label::after {
+                            content: url(../images/icon-arrow-light.svg);
+                            margin: 0 0.5rem;
+                        }
+
+                       
+        
+                        .nav-menu__sub{
+                            display: none;        
+                        }        
+                        .nav-item__accordion:checked ~ .nav-menu__sub{
+                            //padding: 1.5rem 3rem 1.5rem 1rem;
+                            flex-direction: column;
+                            justify-content: center;
+                            //align-items: flex-start;
+                            background-color: #e2e8f0;  
+                            margin: 1rem auto;
+                            border-radius: 5px;            
+                        }
+                        .nav-item__accordion:checked ~ .nav-item__label::after{
+                            transform: rotate(180deg);
+                        }
+                        // .nav-item__sub{
+                        //     margin: 0.5rem 0;
+                        // }                  
+                     }
+
+                     .buttons{
+                        flex-direction: row;
+                        width: 38%;
+        
+                        .nav-button{
+                            margin: 0 2rem;
+                            width: 7rem;
+                            height:3rem;
+                            border-radius: 2rem;
+                        }
+                    }  
+
+                    }
+        
+
+                    .hamburguer {
+                        display: none;
+                    } 
+                }
+
+        
+                    
+        
+}

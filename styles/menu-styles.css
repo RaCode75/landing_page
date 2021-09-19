@@ -249,4 +249,112 @@ a {
 .navbar .hamburguer.active .menu-x {
   display: block;
 }
+
+@media screen and (min-width: 768px) {
+  .navbar {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-wrap: nowrap;
+        flex-wrap: nowrap;
+    margin: 0 auto;
+    padding: 0 5rem;
+  }
+  .navbar .nav-menu {
+    position: inherit;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    background: none;
+    -webkit-box-shadow: none;
+            box-shadow: none;
+    width: 100%;
+  }
+  .navbar .nav-menu .nav-menu__list {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 60%;
+  }
+  .navbar .nav-menu .nav-menu__list .nav-item {
+    width: 20%;
+  }
+  .navbar .nav-menu .nav-menu__list .nav-item__accordion {
+    position: absolute;
+    opacity: 0;
+    padding: 1rem 4rem;
+  }
+  .navbar .nav-menu .nav-menu__list .nav-item__label {
+    position: relative;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin-left: 1rem;
+    cursor: pointer;
+    color: white;
+  }
+  .navbar .nav-menu .nav-menu__list .nav-item__label::after {
+    content: url(../images/icon-arrow-light.svg);
+    margin: 0 0.5rem;
+  }
+  .navbar .nav-menu .nav-menu__list .nav-menu__sub {
+    display: none;
+  }
+  .navbar .nav-menu .nav-menu__list .nav-item__accordion:checked ~ .nav-menu__sub {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    background-color: #e2e8f0;
+    margin: 1rem auto;
+    border-radius: 5px;
+  }
+  .navbar .nav-menu .nav-menu__list .nav-item__accordion:checked ~ .nav-item__label::after {
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg);
+  }
+  .navbar .nav-menu .buttons {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    width: 38%;
+  }
+  .navbar .nav-menu .buttons .nav-button {
+    margin: 0 2rem;
+    width: 7rem;
+    height: 3rem;
+    border-radius: 2rem;
+  }
+  .navbar .hamburguer {
+    display: none;
+  }
+}
 /*# sourceMappingURL=menu-styles.css.map */
