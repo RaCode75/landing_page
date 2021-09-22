@@ -264,8 +264,11 @@ a {
             align-items: center;
     -ms-flex-wrap: nowrap;
         flex-wrap: nowrap;
-    margin: 0 auto;
-    padding: 0 5rem;
+    margin: -1rem auto;
+    padding: 0 7rem;
+  }
+  .navbar .nav-logo {
+    margin: 0 2rem 0 3rem;
   }
   .navbar .nav-menu {
     position: inherit;
@@ -325,33 +328,51 @@ a {
     display: none;
   }
   .navbar .nav-menu .nav-menu__list .nav-item__accordion:checked ~ .nav-menu__sub {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    background-color: #e2e8f0;
-    margin: 1rem auto;
+    position: fixed;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    padding: 1.5rem 4rem 1.5rem 1rem;
+    background-color: white;
+    margin: 1rem 1.5rem;
     border-radius: 5px;
+  }
+  .navbar .nav-menu .nav-menu__list .nav-item__accordion:checked ~ .nav-menu__sub .nav-item__sub {
+    margin: 0.5rem 0;
+  }
+  .navbar .nav-menu .nav-menu__list .nav-item__accordion:checked ~ .nav-menu__sub .nav-item__sub:hover {
+    font-weight: 700;
+  }
+  .navbar .nav-menu .nav-menu__list .nav-item__accordion:checked ~ .nav-item__label {
+    color: white;
+    text-decoration: underline;
   }
   .navbar .nav-menu .nav-menu__list .nav-item__accordion:checked ~ .nav-item__label::after {
     -webkit-transform: rotate(180deg);
             transform: rotate(180deg);
+  }
+  .navbar .nav-menu .nav-menu__list .nav-item__label:hover {
+    text-decoration: underline;
   }
   .navbar .nav-menu .buttons {
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
     width: 38%;
+    border: none;
   }
   .navbar .nav-menu .buttons .nav-button {
-    margin: 0 2rem;
-    width: 7rem;
+    margin: 0 1rem;
+    width: 8rem;
     height: 3rem;
     border-radius: 2rem;
+  }
+  .navbar .nav-menu .buttons .button-nothing {
+    color: white;
   }
   .navbar .hamburguer {
     display: none;

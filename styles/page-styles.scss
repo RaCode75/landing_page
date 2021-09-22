@@ -44,11 +44,11 @@ h2{
 .main {
     height: 90vh;
     padding-top: 3rem;
-    background-image: linear-gradient(to bottom right,$Very_light_red, $Light_red),
-    url(../images/bg-pattern-intro.svg);
-    background-size: 350%;
-    background-position: 35% 30%;
-    background-blend-mode: lighten;
+    // background-image: linear-gradient(to bottom right,$Very_light_red, $Light_red),
+    // url(../images/bg-pattern-intro.svg);
+    // background-size: 350%;
+    // background-position: 35% 30%;
+    // background-blend-mode: lighten;
     background-repeat: no-repeat;
     border-radius: 0 0 0 10rem;
     color: $White;
@@ -56,16 +56,13 @@ h2{
         .principal{
 
             h1{
-
                 font-size: 2.1rem;
                 margin: 1rem 2rem;
             }
 
             p{
                 margin: 0 3rem;
-
-            }
-            
+            }            
     }
 
     .main-buttons{
@@ -193,11 +190,112 @@ footer {
                 .f-link{
                     color: $Grayish_blue;
                     
-                }
-                
+                }                
             }
+        }        
+}
 
+//--------------Media queries
+
+@media screen and (min-width: 768px) {
+
+
+    .main {
+        height: 65vh;
+        padding-top: 3rem;
+        background-image: url(../images/bg-pattern-intro.svg);
+        background-size: 200%;
+        background-position: 20% 50% ;
+        border-radius: 0 0 0 5rem;
+        z-index: 100;
+
+        .principal{
+
+            h1{
+                font-size: 4rem;
+                margin-top: 6rem
+            }
+        }
+    }
+
+    .main::after{
+        content: '';
+        position: absolute;        
+        top: 0;
+        left: 0;        
+
+        background-image: linear-gradient(to right,$Very_light_red, $Light_red); 
+        //mix-blend-mode:luminosity;
+        height:65vh;
+        width: 100%;
+        background-size: 100%;;
+        border-radius: 0 0 0 5rem;
+        z-index: -1;
+    }
+
+    .sect1{
+        margin: 3rem auto;
+        width: 100%;
+        display:grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 2;
+        grid-template-areas: 
+                        "heading heading"
+                        "paragraphs figure";
+        overflow: hidden;
+
+        .heading1{
+            grid-area: heading;
+            margin-top: 7rem;
+            font-size: 2.5rem;
+            align-self: center;
+        }
+    
+    
+        .sect-container {
+            grid-area: paragraphs;
+            width: 100%;
+            text-align: left;
+            align-self:center;
+            justify-items: center;
+
+            .paragraph1{
+                text-align: left;
+                padding: 0;
+                width: 70%;
+               
+            }
+    
+            .paragraph2{
+                text-align: left;
+                padding: 0;
+                width: 70%;
+            }
+        
+
+            .heading2{
+                margin-bottom: 2rem;
+                padding: 0 ;
+            }
+        
+            .heading3{
+                margin-top: 4rem;
+                padding: 0;
+            }
         }
 
-        
+
+        .mobile-img {
+            display: none;
+        }
+
+        .desktop-img{
+            display: inherit;
+        }
+        .fig1{
+            grid-area: figure;
+            width: 120%;
+            margin: -4rem 0 ;
+        }
+    }
 }

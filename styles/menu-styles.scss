@@ -250,9 +250,12 @@ a {
         justify-content: flex-start;
         align-items: center;
         flex-wrap: nowrap;
-        margin: 0 auto;
-        padding: 0 5rem;
+        margin: -1rem auto;
+        padding: 0 7rem;
 
+        .nav-logo{
+            margin: 0 2rem 0 3rem;
+        }
         
                     .nav-menu{
                         position:inherit;
@@ -296,34 +299,58 @@ a {
                        
         
                         .nav-menu__sub{
-                            display: none;        
+                            display: none;
+
+
+     
                         }        
                         .nav-item__accordion:checked ~ .nav-menu__sub{
-                            //padding: 1.5rem 3rem 1.5rem 1rem;
-                            flex-direction: column;
-                            justify-content: center;
-                            //align-items: flex-start;
-                            background-color: #e2e8f0;  
-                            margin: 1rem auto;
-                            border-radius: 5px;            
+                            position: fixed;
+                            align-items: flex-start;
+                            padding: 1.5rem 4rem 1.5rem 1rem;
+                            background-color: $White;  
+                            margin: 1rem 1.5rem;
+                            border-radius: 5px; 
+                            
+                            .nav-item__sub {
+                                margin: 0.5rem 0;                                
+                            }
+
+                            .nav-item__sub:hover{
+                                font-weight: 700;
+                            }
+
+                        }
+                        .nav-item__accordion:checked ~ .nav-item__label{
+                            color: $White;
+                            text-decoration: underline;
                         }
                         .nav-item__accordion:checked ~ .nav-item__label::after{
                             transform: rotate(180deg);
                         }
-                        // .nav-item__sub{
-                        //     margin: 0.5rem 0;
-                        // }                  
-                     }
+
+                        .nav-item__label:hover {
+                            text-decoration: underline;                              
+             
+                        }
+                        
+                    }
 
                      .buttons{
                         flex-direction: row;
+                        justify-content: flex-end;
                         width: 38%;
+                        border: none;
         
                         .nav-button{
-                            margin: 0 2rem;
-                            width: 7rem;
+                            margin: 0 1rem;
+                            width: 8rem;
                             height:3rem;
                             border-radius: 2rem;
+                        }
+
+                        .button-nothing {
+                            color: $White;
                         }
                     }  
 
@@ -333,9 +360,7 @@ a {
                     .hamburguer {
                         display: none;
                     } 
-                }
-
-        
+                }    
                     
         
 }

@@ -15,11 +15,6 @@ h2 {
 .main {
   height: 90vh;
   padding-top: 3rem;
-  background-image: -webkit-gradient(linear, left top, right bottom, from(#ff8f70), to(#ff3d54)), url(../images/bg-pattern-intro.svg);
-  background-image: linear-gradient(to bottom right, #ff8f70, #ff3d54), url(../images/bg-pattern-intro.svg);
-  background-size: 350%;
-  background-position: 35% 30%;
-  background-blend-mode: lighten;
   background-repeat: no-repeat;
   border-radius: 0 0 0 10rem;
   color: white;
@@ -184,5 +179,99 @@ footer .f-list .f-list-item {
 
 footer .f-list .f-list-item .f-link {
   color: #c8c8cb;
+}
+
+@media screen and (min-width: 768px) {
+  .main {
+    height: 65vh;
+    padding-top: 3rem;
+    background-image: url(../images/bg-pattern-intro.svg);
+    background-size: 200%;
+    background-position: 20% 50%;
+    border-radius: 0 0 0 5rem;
+    z-index: 100;
+  }
+  .main .principal h1 {
+    font-size: 4rem;
+    margin-top: 6rem;
+  }
+  .main::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-image: -webkit-gradient(linear, left top, right top, from(#ff8f70), to(#ff3d54));
+    background-image: linear-gradient(to right, #ff8f70, #ff3d54);
+    height: 65vh;
+    width: 100%;
+    background-size: 100%;
+    border-radius: 0 0 0 5rem;
+    z-index: -1;
+  }
+  .sect1 {
+    margin: 3rem auto;
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+    -ms-grid-rows: 2;
+        grid-template-rows: 2;
+        grid-template-areas: "heading heading" "paragraphs figure";
+    overflow: hidden;
+  }
+  .sect1 .heading1 {
+    -ms-grid-row: 1;
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-area: heading;
+    margin-top: 7rem;
+    font-size: 2.5rem;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+  }
+  .sect1 .sect-container {
+    -ms-grid-row: 2;
+    -ms-grid-column: 1;
+    grid-area: paragraphs;
+    width: 100%;
+    text-align: left;
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    justify-items: center;
+  }
+  .sect1 .sect-container .paragraph1 {
+    text-align: left;
+    padding: 0;
+    width: 70%;
+  }
+  .sect1 .sect-container .paragraph2 {
+    text-align: left;
+    padding: 0;
+    width: 70%;
+  }
+  .sect1 .sect-container .heading2 {
+    margin-bottom: 2rem;
+    padding: 0;
+  }
+  .sect1 .sect-container .heading3 {
+    margin-top: 4rem;
+    padding: 0;
+  }
+  .sect1 .mobile-img {
+    display: none;
+  }
+  .sect1 .desktop-img {
+    display: inherit;
+  }
+  .sect1 .fig1 {
+    -ms-grid-row: 2;
+    -ms-grid-column: 2;
+    grid-area: figure;
+    width: 120%;
+    margin: -4rem 0;
+  }
 }
 /*# sourceMappingURL=page-styles.css.map */
