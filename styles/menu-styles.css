@@ -83,11 +83,11 @@ a {
 }
 
 .navbar .nav-menu {
-  position: fixed;
-  margin: auto;
+  position: absolute;
+  margin: 0 auto;
   width: 80%;
-  left: 0;
-  right: 0;
+  left: 10%;
+  right: 10%;
   top: -100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -123,12 +123,12 @@ a {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  width: 100%;
+  width: 80%;
 }
 
 .navbar .nav-menu .nav-menu__list .nav-item {
   margin: 1rem 0;
-  width: 85%;
+  width: 80%;
 }
 
 .navbar .nav-menu .nav-menu__list .nav-item__accordion {
@@ -222,7 +222,7 @@ a {
 
 .navbar .nav-menu.active {
   top: 8rem;
-  width: 85%;
+  width: 80%;
 }
 
 .navbar .hamburguer {
